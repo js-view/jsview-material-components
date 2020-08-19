@@ -1,21 +1,9 @@
+import { createViewBuilder, generateBindings, html, View } from '@jsview/core';
 import '@material/mwc-button';
 import { spread } from '@open-wc/lit-helpers/src/spread';
-import { generateBindings, view, html, css } from '@jsview/core';
+import { styleMap } from 'lit-html/directives/style-map';
 
-function template(props: ButtonProps) {
-  const bindings: { [k: string]: string } = generateBindings(props);
-
-  return html` <mwc-button ...=${spread(bindings)}></mwc-button> `;
-}
-
-const cssTemplate = css`
-  mwc-button {
-    display: inline-block;
-    width: 100%;
-  }
-`;
-
-export class ButtonProps {
+export class ButtonView extends View {
   label?: string = undefined;
   disabled = false;
   icon?: string = undefined;
@@ -26,15 +14,20 @@ export class ButtonProps {
   dense = false;
 
   onClick?: () => void = undefined;
+
+  get body() {
+    const bindings: { [k: string]: string } = generateBindings(this);
+
+    return html`
+      <mwc-button
+        ...=${spread({ ...this.attrs, ...bindings })}
+        .view="${this}"
+        style="${styleMap(this.styles)}"
+      ></mwc-button>
+    `;
+  }
 }
 
-export const [ButtonViewBuilder, ButtonView] = view(
-  'jsview-mdc-button',
-  { template, cssTemplate },
-  ButtonProps
-);
-console.log(ButtonViewBuilder().label('click').body);
-
 export function Button(label: string) {
-  return ButtonViewBuilder().label(label);
+  return createViewBuilder(ButtonView).label(label);
 }
