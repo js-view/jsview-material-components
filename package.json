@@ -27,6 +27,8 @@
   "dependencies": {
     "@jsview/core": "^0.7.1",
     "@material/mwc-button": "^0.15.0",
+    "@material/mwc-list": "^0.15.0",
+    "@material/mwc-select": "^0.15.0",
     "@material/mwc-textfield": "^0.15.0",
     "@open-wc/lit-helpers": "^0.3.11"
   },
