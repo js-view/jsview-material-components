@@ -1,5 +1,5 @@
 import { html, View, createViewBuilder } from '@jsview/core';
-import '@material/icon-button';
+import '@material/mwc-icon-button';
 import { spread } from '@open-wc/lit-helpers/src/spread';
 import { nothing, TemplateResult, SVGTemplateResult } from 'lit-html';
 import { ifDefined } from 'lit-html/directives/if-defined';

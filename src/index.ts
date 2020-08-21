@@ -3,3 +3,4 @@ export * from './select/index.js';
 export * from './snackbar/index.js';
 export * from './switch/index.js';
 export * from './textfield/index.js';
+export * from './icon-button/index.js';
