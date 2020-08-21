@@ -25,7 +25,7 @@
     "deploy": "cd ./dist && yarn publish"
   },
   "dependencies": {
-    "@jsview/core": "^0.8.0",
+    "@jsview/core": "^0.10.0",
     "@material/mwc-button": "^0.15.0",
     "@material/mwc-circular-progress": "^0.18.0",
     "@material/mwc-dialog": "^0.15.0",

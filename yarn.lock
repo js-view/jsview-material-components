@@ -902,10 +902,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@jsview/core@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@jsview/core/-/core-0.8.0.tgz#f7e862d8b9ad3a826dac2db95a3bbcb6ebe0b2ec"
-  integrity sha512-EEkqA5JRCMU+HioVBT/m4EXi/YnWm4STaH55dLq3ue//ai5GxwNuTIt8NJ5uftZvKMZ5rUpQTNg6Hb50894S5Q==
+"@jsview/core@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@jsview/core/-/core-0.10.0.tgz#f500cb82d1e38df88b62eddeef5188e629fa5323"
+  integrity sha512-7+zYNm3l1WytRcltCrn5vE9odS8DLG6MDpA8OKLIfv4UbWIPKGM0wZsVmc5H8Ti7Te+2GIamUgeM7A5LSl7BeQ==
   dependencies:
     "@open-wc/lit-helpers" "^0.3.11"
     lit-element "^2.2.1"
