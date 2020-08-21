@@ -29,6 +29,7 @@
     "@material/mwc-button": "^0.15.0",
     "@material/mwc-circular-progress": "^0.18.0",
     "@material/mwc-dialog": "^0.15.0",
+    "@material/mwc-fab": "^0.15.0",
     "@material/mwc-formfield": "^0.15.0",
     "@material/mwc-icon-button": "^0.15.0",
     "@material/mwc-list": "^0.15.0",
