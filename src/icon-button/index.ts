@@ -11,6 +11,7 @@ export class IconButtonView extends View {
   disabled = false;
   iconSize?: string = undefined;
   buttonSize?: string = undefined;
+  onClick?: () => void = undefined;
 
   get body() {
     let slotIcon: any;
@@ -31,6 +32,7 @@ export class IconButtonView extends View {
         label="${this.label}"
         ?disabled="${this.disabled}"
         icon="${ifDefined(icon)}"
+        @click="${() => this.onClick?.()}"
       >
         ${slotIcon || nothing}
       </mwc-icon-button>
