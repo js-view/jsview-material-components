@@ -1,5 +1,6 @@
-import 'reflect-metadata';
 import { HSTack } from '@jsview/core/layout';
+import 'reflect-metadata';
+import '../theme.js';
 import { Button } from './index.js';
 
 export default {
@@ -57,5 +58,4 @@ export const CustomColor = () =>
   Button('Custom Color')
     .raised()
     .icon('code')
-    .style('--mdc-theme-primary', '#e9437a')
-    .style('--mdc-theme-on-primary', '#fff').body;
+    .theme({ primaryColor: '#e9437a', onPrimaryColor: '#fff' }).body;

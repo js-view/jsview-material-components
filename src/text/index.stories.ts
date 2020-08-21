@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { VSTack } from '@jsview/core/layout';
 import { TextScale } from './font.js';
 import { Text } from './index.js';

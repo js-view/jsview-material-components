@@ -1,3 +1,4 @@
+import '../theme.js';
 import { Fab } from './index.js';
 
 export default {
@@ -15,6 +16,4 @@ export const Extended = () =>
   Fab('shopping_cart').extended().label('Add to cart').body;
 
 export const Styled = () =>
-  Fab('share')
-    .style('--mdc-theme-secondary', '#fff')
-    .style('--mdc-theme-on-secondary', '#000').body;
+  Fab('share').theme({ secondaryColor: '#fff', onSecondaryColor: '#000' }).body;
