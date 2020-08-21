@@ -11,3 +11,5 @@ export function Text(text: string, font: Font = TextScale.body1) {
       >`
   ).font(font);
 }
+
+export * from './font.js';
