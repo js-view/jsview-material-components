@@ -21,7 +21,7 @@
     "test:prune-snapshots": "karma start --prune-snapshots",
     "storybook": "start-storybook",
     "storybook:build": "build-storybook",
-    "build": "rimraf dist && tsc --declaration && cp package.json ./dist",
+    "build": "rimraf dist && yarn add @jsview/core --peer && tsc --declaration && cp package.json ./dist",
     "deploy": "cd ./dist && yarn publish"
   },
   "dependencies": {
