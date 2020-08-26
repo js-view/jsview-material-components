@@ -51,6 +51,7 @@ export class TextfieldView extends View {
         .view="${this}"
         ...=${spread({ ...this.attrs, ...bindings })}
         style="${styleMap(this.styles)}"
+        .validityTransform="${this.validityTransform}"
         @change="${this.#handleChange}"
       ></mwc-textfield>
     `;
