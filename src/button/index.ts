@@ -20,6 +20,7 @@ export class ButtonView extends View {
 
     return html`
       <mwc-button
+        type="button"
         ...=${spread({ ...this.attrs, ...bindings })}
         .view="${this}"
         style="${styleMap(this.styles)}"

@@ -25,22 +25,22 @@
     "deploy": "cd ./dist && yarn publish"
   },
   "dependencies": {
-    "@material/mwc-button": "^0.15.0",
+    "@material/mwc-button": "^0.18.0",
     "@material/mwc-circular-progress": "^0.18.0",
-    "@material/mwc-dialog": "^0.15.0",
-    "@material/mwc-fab": "^0.15.0",
-    "@material/mwc-formfield": "^0.15.0",
-    "@material/mwc-icon-button": "^0.15.0",
-    "@material/mwc-list": "^0.15.0",
-    "@material/mwc-menu": "^0.15.0",
-    "@material/mwc-select": "^0.15.0",
-    "@material/mwc-snackbar": "^0.15.0",
-    "@material/mwc-switch": "^0.15.0",
-    "@material/mwc-textfield": "^0.15.0",
+    "@material/mwc-dialog": "^0.18.0",
+    "@material/mwc-fab": "^0.18.0",
+    "@material/mwc-formfield": "^0.18.0",
+    "@material/mwc-icon-button": "^0.18.0",
+    "@material/mwc-list": "^0.18.0",
+    "@material/mwc-menu": "^0.18.0",
+    "@material/mwc-select": "^0.18.0",
+    "@material/mwc-snackbar": "^0.18.0",
+    "@material/mwc-switch": "^0.18.0",
+    "@material/mwc-textfield": "^0.18.0",
     "@open-wc/lit-helpers": "^0.3.11"
   },
   "peerDependencies": {
-    "@jsview/core": "^0.10.1"
+    "@jsview/core": "^0.13.0"
   },
   "devDependencies": {
     "@open-wc/demoing-storybook": "^2.0.0",
